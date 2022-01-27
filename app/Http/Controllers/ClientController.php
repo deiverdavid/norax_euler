@@ -13,10 +13,12 @@ class ClientController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         return Inertia::render('Clients/Index', [
-            'clients' => Client::latest()->get()
+            'clients' => Client::latest()
+            ->where('name', 'LIKE', "%$request->q%")
+            ->get()
         ]);
     }
 
@@ -52,7 +54,7 @@ class ClientController extends Controller
 
         $client = Client::create($request->all());
 
-        return redirect()->route('clients.index');
+        return redirect()->route('clients.index')->with('status', 'Usuario creado con Éxito');
     }
 
     /**
@@ -100,7 +102,7 @@ class ClientController extends Controller
 
         $client->update($request->all());
 
-        return redirect()->route('clients.index');
+        return redirect()->route('clients.index')->with('status', 'Usuario actualizado correctamente');
     }
 
     /**
@@ -111,6 +113,8 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+
+        return redirect()->route('clients.index')->with('status', 'Usuario Eliminado');
     }
 }

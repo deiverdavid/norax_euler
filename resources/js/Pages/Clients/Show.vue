@@ -18,9 +18,32 @@
 
                     <div class="md:col-span-2 mt-5 md:mt-0">
                         <div class="shadow bgwhite md:rounded-md p-4">
-                            <p>{{ client.lastname1 }}</p>
-                            <p>{{ client.lastname2 }}</p>
-                            <p>{{ client.phone_number }}</p>
+                            <label class="block font-medium text-md font-bold">Cédula</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.cedula }}</p>
+
+                            <label class="block font-medium text-md font-bold">Nombre</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.name }}</p>
+
+                            <label class="block font-medium text-md font-bold">Primer Apellido</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.lastname1 }}</p>
+
+                            <label class="block font-medium text-md font-bold">Segundo Apellido</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.lastname2 }}</p>
+
+                            <label class="block font-medium text-md font-bold">Telefono Celular</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.phone_number }}</p>
+
+                            <label class="block font-medium text-md font-bold">Correo Electronico</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.email }}</p>
+
+                            <label class="block font-medium text-md font-bold">Dirección</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.address }}</p>
+
+                            <label class="block font-medium text-md font-bold">Cargo</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.position }}</p>
+
+                            <label class="block font-medium text-md font-bold">Descripción del Cargo</label>
+                            <p class="text-indigo-700 font-semibold">{{ client.description_position }}</p>
                             <hr class="my-6">
 
                             <Link :href="route('clients.index')">

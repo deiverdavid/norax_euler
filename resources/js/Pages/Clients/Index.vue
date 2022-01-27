@@ -16,7 +16,8 @@
                     </div>
 
                     <div class="container ml-2 mt-4">
-                            
+                            <input type="text" class="form-input rounded-md shadow-sm" placeholder="Buscar..." v-model="q">
+
                             <Link :href="route('clients.create')" class="m-2 p-2 bg-blue-500 my-1 mt-1 rounded-md text-white">
                                Nuevo +
                             </Link>
@@ -42,28 +43,28 @@
                                         {{ client.name }}
                                     </td>
                                     <td class="border px-4 py-2">
-                                       {{ client.name }}
+                                       {{ client.lastname1 }}
                                     </td>
                                     <td class="border px-4 py-2">
-                                        {{ client.name }}
+                                        {{ client.phone_number }}
                                     </td>
                                     <td class="border px-4 py-2">
-                                       {{ client.name }}
+                                       {{ client.email }}
                                     </td>
                                     <td class="border px-4 py-2">
-                                        {{ client.name }}
+                                        {{ client.address }}
                                     </td>
                                     <td class="px-4 py-2 ">
                                         <jet-button class="m-2 p-2 bg-green-500 my-1 mt-1 rounded-md flex self-center text-white text-center" >
                                           <Link :href="route('clients.show', client.id)">
                                             Mostrar
-                                             </Link>
+                                          </Link>
                                         </jet-button>
 
                                         <jet-button class="m-2 p-2 bg-orange-500 my-1 mt-1 rounded-md flex self-center text-white text-center" >
                                             <Link :href="route('clients.edit', client.id)">
-                                            Editar
-                                             </Link>
+                                                Editar
+                                            </Link>
                                         </jet-button>
                                         
                                     </td>
@@ -95,6 +96,16 @@
         },
         props: {
             clients: Array,
+        },
+        data() {
+            return {
+                q: ''
+            }
+        },
+        watch: {
+            q: function (value) {
+                this.$inertia.get(this.route('clients.index', {q: value}), {}, {preserveState:true})
+            }
         }
     })
 </script>

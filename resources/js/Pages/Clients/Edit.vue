@@ -53,6 +53,12 @@
                                     Editar
                                 </button>
                            </form>
+
+                           <hr class="my-6">
+
+                           <a href="#" @click.prevent="destroy">
+                               Eliminar Usuario
+                           </a>
                         </div>
                     </div>
 
@@ -100,6 +106,11 @@
         methods:{
             submit() {
                 this.$inertia.put(this.route('clients.update', this.client.id), this.form)
+            },
+            destroy() {
+                if(confirm('¿Desea Eliminar?')){
+                    this.$inertia.delete(this.route('clients.destroy', this.client.id))
+                }
             }
         }
     })
