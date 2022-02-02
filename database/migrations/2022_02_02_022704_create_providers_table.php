@@ -15,6 +15,18 @@ class CreateProvidersTable extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
+            $table->string('nit');
+            $table->string('cedula');
+            $table->string('business_name');
+            $table->string('property_name');
+            $table->string('name');
+            $table->string('lastname1');
+            $table->string('lastname2');
+            $table->string('address');
+            $table->string('phone_number1');
+            $table->string('phone_number2')->nullable();
+            $table->string('fax');
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }
