@@ -25,6 +25,9 @@
                                 <jet-nav-link :href="route('clients.index')" :active="route().current('clients.*')">
                                     Usuarios
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('providers.index')" :active="route().current('providers.*')">
+                                    Proveedores
+                                </jet-nav-link>
                             </div>
                         </div>
 
@@ -150,6 +153,9 @@
                         </jet-responsive-nav-link>
                         <jet-responsive-nav-link :href="route('clients.index')" :active="route().current('clients.*')">
                             Usuarios
+                        </jet-responsive-nav-link>
+                        <jet-responsive-nav-link :href="route('clients.index')" :active="route().current('clients.*')">
+                            Proveedores
                         </jet-responsive-nav-link>
                     </div>
 
