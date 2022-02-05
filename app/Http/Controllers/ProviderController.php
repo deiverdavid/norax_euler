@@ -13,9 +13,12 @@ class ProviderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Inertia::render('Dashboard');
+        return Inertia::render('Providers/Index', [
+            'providers' => Provider::latest()
+           ->where('name', 'LIKE', "%$request->q%")
+        ]);
     }
 
     /**
@@ -25,7 +28,7 @@ class ProviderController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Providers/Create');
     }
 
     /**
@@ -36,7 +39,24 @@ class ProviderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nit' => 'required',
+            'cedula' => 'required',
+            'business_name' => 'required',
+            'property_name' => 'required',
+            'name' => 'required',
+            'lastname1' => 'required',
+            'lastname2' => 'required',
+            'address' => 'required',
+            'phone_number1' => 'required',
+            'phone_number2' => '',
+            'fax' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $provider = Provider::create($request->all());
+
+        return redirect()->route('providers.index');
     }
 
     /**
