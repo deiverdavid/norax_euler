@@ -24,3 +24,6 @@ Route::get('dashboard', [\App\Http\Controllers\PageController::class, 'dashboard
 
 Route::resource('clients', \App\Http\Controllers\ClientController::class)
     ->middleware('auth:sanctum');
+
+Route::resource('providers', \App\Http\Controllers\ProviderController::class)
+    ->middleware('auth:sanctum');
