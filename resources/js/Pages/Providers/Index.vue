@@ -33,13 +33,13 @@
                                         <th>Razon social</th>
                                         <th>Lugar del negocio</th>
                                         <th>Nombre</th>
-                                        <th>Primer apellido</th>
+                                        <!--<th>Primer apellido</th>
                                         <th>Segundo apellido</th>
                                         <th>Dirección</th>
                                         <th>Telefono 1</th>
                                         <th>Telefono 2</th>
                                         <th>Fax</th>
-                                        <th>Correo</th>
+                                        <th>Correo</th>-->
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -61,7 +61,7 @@
                                     <td class="border px-4 py-2">
                                         {{ provider.name }}
                                     </td>
-                                    <td class="border px-4 py-2">
+                                   <!-- <td class="border px-4 py-2">
                                         {{ provider.lastname1 }}
                                     </td>
                                     <td class="border px-4 py-2">
@@ -80,8 +80,8 @@
                                         {{ provider.fax }}
                                     </td>
                                     <td class="border px-4 py-2">
-                                        {{ provider.email }}
-                                    </td>
+                                        {{ provider.email }} 
+                                    </td>-->
                                     <td class="px-4 py-2 ">
                                         <jet-button class="m-2 p-2 bg-green-500 my-1 mt-1 rounded-md flex self-center text-white text-center" >
                                           <Link :href="route('providers.show', provider.id)">
