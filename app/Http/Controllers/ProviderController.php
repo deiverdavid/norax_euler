@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use App\Models\Provider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProviderController extends Controller
 {
@@ -15,9 +16,19 @@ class ProviderController extends Controller
      */
     public function index(Request $request)
     {
-        return Inertia::render('Providers/Index', [
-            'providers' => Provider::latest()
-           ->where('name', 'LIKE', "%$request->q%")
+       
+       // echo($request->q);
+       /*return $request;*/
+        
+
+
+        return Inertia::render('Providers/Index',  [
+            'providers' => Provider::all()
+            /*->where('name', 'LIKE', "%$request->q%")*/
+
+
+           /* 'providers' => Provider::latest()
+           ->where('name', 'LIKE', "%$request->q%")*/
         ]);
     }
 
@@ -67,7 +78,7 @@ class ProviderController extends Controller
      */
     public function show(Provider $provider)
     {
-        //
+        return Inertia::render('Providers/Show', compact('provider'));
     }
 
     /**
@@ -78,7 +89,7 @@ class ProviderController extends Controller
      */
     public function edit(Provider $provider)
     {
-        //
+        return Inertia::render('Providers/Edit', compact('provider'));
     }
 
     /**
@@ -90,7 +101,24 @@ class ProviderController extends Controller
      */
     public function update(Request $request, Provider $provider)
     {
-        //
+        $request->validate([
+            'nit' => 'required',
+            'cedula' => 'required',
+            'business_name' => 'required',
+            'property_name' => 'required',
+            'name' => 'required',
+            'lastname1' => 'required',
+            'lastname2' => 'required',
+            'address' => 'required',
+            'phone_number1' => 'required',
+            'phone_number2' => '',
+            'fax' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $provider->update($request->all());
+
+        return redirect()->route('providers.index');
     }
 
     /**
