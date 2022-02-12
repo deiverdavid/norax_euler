@@ -11,42 +11,59 @@
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
                         <div class="px-4 sm:px0">
-                            <h3 class="text-lg text-gray-900">Detalle del usuario</h3>
-                            <p class="text-lg text-black">{{ provider.name }}</p>
+                            <h3 class="text-lg text-gray-900">Detalle del proveedor</h3>
+                            <p class="text-xl font-bold">{{ provider.name }}</p>
                         </div>
                     </div>
 
                     <div class="md:col-span-2 mt-5 md:mt-0">
                         <div class="shadow bgwhite md:rounded-md p-4">
+
+                            
+                            <label class="block font-medium text-md font-bold">Nit</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.nit }}</p>
+
+
                             <label class="block font-medium text-md font-bold">Cédula</label>
                             <p class="text-indigo-700 font-semibold">{{ provider.cedula }}</p>
 
-                         <!--   <label class="block font-medium text-md font-bold">Nombre</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.name }}</p>
+                            <label class="block font-medium text-md font-bold">Razón social</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.business_name }}</p>
 
-                            <label class="block font-medium text-md font-bold">Primer Apellido</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.lastname1 }}</p>
+                            <label class="block font-medium text-md font-bold">Nombre del establecimiento</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.property_name }}</p>
+
+                            <label class="block font-medium text-md font-bold">Nombre del encargado</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.name }}</p>
+
+                            <label class="block font-medium text-md font-bold">Primer apellido</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.lastname1 }}</p>
 
                             <label class="block font-medium text-md font-bold">Segundo Apellido</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.lastname2 }}</p>
-
-                            <label class="block font-medium text-md font-bold">Telefono Celular</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.phone_number }}</p>
-
-                            <label class="block font-medium text-md font-bold">Correo Electronico</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.email }}</p>
+                            <p class="text-indigo-700 font-semibold">{{ provider.lastname2 }}</p>
 
                             <label class="block font-medium text-md font-bold">Dirección</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.address }}</p>
+                            <p class="text-indigo-700 font-semibold">{{ provider.address }}</p>
 
-                            <label class="block font-medium text-md font-bold">Cargo</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.position }}</p>
+                            <label class="block font-medium text-md font-bold">Telefono Celular(primer contacto)</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.phone_number1 }}</p>
 
-                            <label class="block font-medium text-md font-bold">Descripción del Cargo</label>
-                            <p class="text-indigo-700 font-semibold">{{ client.description_position }}</p>-->
+                            <label class="block font-medium text-md font-bold">Telefono Celular(segundo contacto)</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.phone_number2 }}</p>
+
+                            <label class="block font-medium text-md font-bold">Telefono Celular(segundo contacto)</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.fax }}</p>
+
+                            <label class="block font-medium text-md font-bold">Correo Electronico</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.email }}</p>
+
+                            <label class="block font-medium text-md font-bold">Dirección</label>
+                            <p class="text-indigo-700 font-semibold">{{ provider.address }}</p>
+
+                            
                             <hr class="my-6">
 
-                            <Link :href="route('clients.index')">
+                            <Link :href="route('providers.index')">
                                 Volver
                             </Link>
                         </div>
