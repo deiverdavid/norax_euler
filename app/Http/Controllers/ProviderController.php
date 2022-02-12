@@ -60,7 +60,7 @@ class ProviderController extends Controller
 
         $provider = Provider::create($request->all());
 
-        return redirect()->route('providers.index');
+        return redirect()->route('providers.index')->with('status', 'Proveedor registrado correctamente');
     }
 
     /**
@@ -111,7 +111,7 @@ class ProviderController extends Controller
 
         $provider->update($request->all());
 
-        return redirect()->route('providers.index');
+        return redirect()->route('providers.index')->with('status', 'Proveedor actualizado correctamente');
     }
 
     /**
@@ -124,6 +124,6 @@ class ProviderController extends Controller
     {
         $provider->delete();
 
-        return redirect()->route('providers.index');//->with('status', 'Usuario Eliminado');
+        return redirect()->route('providers.index')->with('status', 'Proveedor eliminado correctamente');
     }
 }
