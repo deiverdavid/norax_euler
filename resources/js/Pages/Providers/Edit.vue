@@ -20,10 +20,19 @@
                         <div class="shadow bgwhite md:rounded-md p-4">
                            <form @submit.prevent="submit">
                                
+                               <label class="block font-medium text-sm text-gray-700">Nit</label>
+                               <input class="form-input w-full rounded-md shadow-sm border-b-2 mb-3" v-model="form.nit">
+
                                <label class="block font-medium text-sm text-gray-700">Cédula</label>
                                <input class="form-input w-full rounded-md shadow-sm border-b-2 mb-3" v-model="form.cedula">
 
-                               <label class="block font-medium text-sm text-gray-700 m">Nombre</label>
+                               <label class="block font-medium text-sm text-gray-700 m">Razón social</label>
+                               <input class="form-input w-full rounded-md shadow-sm border-b-2 mb-3" v-model="form.business_name">
+
+                               <label class="block font-medium text-sm text-gray-700 m">Nombre del establecimiento</label>
+                               <input class="form-input w-full rounded-md shadow-sm border-b-2 mb-3" v-model="form.property_name">
+
+                               <label class="block font-medium text-sm text-gray-700 m">Nombre del responsable</label>
                                <input class="form-input w-full rounded-md shadow-sm border-b-2 mb-3" v-model="form.name">
 
                                <label class="block font-medium text-sm text-gray-700">Primer apellido</label>
@@ -32,22 +41,20 @@
                                <label class="block font-medium text-sm text-gray-700">Segundo apellido</label>
                                <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.lastname2">
 
-                               <label class="block font-medium text-sm text-gray-700">Número de celular</label>
-                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.phone_number">
-
-                               <label class="block font-medium text-sm text-gray-700">Correo electronico</label>
-                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.email">
-
                                <label class="block font-medium text-sm text-gray-700">Dirección</label>
                                <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.address">
 
-                            <!--   <label class="block font-medium text-sm text-gray-700">Cargo</label>
-                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.position">
+                               <label class="block font-medium text-sm text-gray-700">Número de celular(primer contacto)</label>
+                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.phone_number1">
 
-                               <label class="block font-medium text-sm text-gray-700">Descripción del cargo</label>
-                               <textarea class="form-input w-full rounded-md shadow-sm mb-5" v-model="form.description_position"></textarea> -->
+                               <label class="block font-medium text-sm text-gray-700">Número de celular(segundo contacto)</label>
+                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.phone_number2">
 
-                
+                               <label class="block font-medium text-sm text-gray-700">Fax</label>
+                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.fax">
+
+                               <label class="block font-medium text-sm text-gray-700">Correo electronico</label>
+                               <input class="form-input w-full rounded-md shadow-sm mb-3" v-model="form.email">
 
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
                                     Editar
@@ -56,9 +63,9 @@
 
                            <hr class="my-6">
 
-                         <!--  <a href="#" @click.prevent="destroy">
+                           <a href="#" @click.prevent="destroy">
                                Eliminar Usuario
-                           </a>-->
+                           </a>
                         </div>
                     </div>
 
@@ -89,16 +96,18 @@
         data (){
             return {
                 form:{
-                    cedula: this.client.cedula,
-                    name: this.client.name,
-                    lastname1: this.client.lastname1,
-                    lastname2: this.client.lastname2,
-                    phone_number: this.client.phone_number,
-                    email: this.client.email,
-                    address: this.client.address,
-                   /* position: this.client.position,
-                    description_position: this.client.description_position,*/
-
+                    nit: this.provider.nit,
+                    cedula:  this.provider.cedula,
+                    business_name: this.provider.business_name,
+                    property_name: this.provider.property_name,
+                    name: this.provider.name,
+                    lastname1: this.provider.lastname1,
+                    lastname2: this.provider.lastname2,
+                    address: this.provider.address,
+                    phone_number1: this.provider.phone_number1,
+                    phone_number2: this.provider.phone_number2,
+                    fax: this.provider.fax,
+                    email: this.provider.email,
 
                 }
             }
@@ -109,7 +118,7 @@
             },
             destroy() {
                 if(confirm('¿Desea Eliminar?')){
-                    this.$inertia.delete(this.route('clients.destroy', this.client.id))
+                    this.$inertia.delete(this.route('providers.destroy', this.provider.id))
                 }
             }
         }
