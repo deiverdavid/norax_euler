@@ -17,19 +17,12 @@ class ProviderController extends Controller
     public function index(Request $request)
     {
        
-       // echo($request->q);
-       /*return $request;*/
-        
-
-
-        return Inertia::render('Providers/Index',  [
-            'providers' => Provider::all()
-            /*->where('name', 'LIKE', "%$request->q%")*/
-
-
-           /* 'providers' => Provider::latest()
-           ->where('name', 'LIKE', "%$request->q%")*/
+        return Inertia::render('Providers/Index', [
+            'providers' => Provider::latest()
+            ->where('name', 'LIKE', "%$request->q%")
+            ->get()
         ]);
+
     }
 
     /**
