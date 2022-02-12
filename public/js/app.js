@@ -27423,12 +27423,12 @@ var _hoisted_6 = {
 
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "text-lg text-gray-900"
-}, "Detalle del usuario", -1
+}, "Detalle del proveedor", -1
 /* HOISTED */
 );
 
 var _hoisted_8 = {
-  "class": "text-lg text-black"
+  "class": "text-xl font-bold"
 };
 var _hoisted_9 = {
   "class": "md:col-span-2 mt-5 md:mt-0"
@@ -27439,7 +27439,7 @@ var _hoisted_10 = {
 
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "block font-medium text-md font-bold"
-}, "Cédula", -1
+}, "Nit", -1
 /* HOISTED */
 );
 
@@ -27447,13 +27447,133 @@ var _hoisted_12 = {
   "class": "text-indigo-700 font-semibold"
 };
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Cédula", -1
+/* HOISTED */
+);
+
+var _hoisted_14 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Razón social", -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Nombre del establecimiento", -1
+/* HOISTED */
+);
+
+var _hoisted_18 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Nombre del encargado", -1
+/* HOISTED */
+);
+
+var _hoisted_20 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Primer apellido", -1
+/* HOISTED */
+);
+
+var _hoisted_22 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Segundo Apellido", -1
+/* HOISTED */
+);
+
+var _hoisted_24 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Dirección", -1
+/* HOISTED */
+);
+
+var _hoisted_26 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Telefono Celular(primer contacto)", -1
+/* HOISTED */
+);
+
+var _hoisted_28 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Telefono Celular(segundo contacto)", -1
+/* HOISTED */
+);
+
+var _hoisted_30 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Telefono Celular(segundo contacto)", -1
+/* HOISTED */
+);
+
+var _hoisted_32 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Correo Electronico", -1
+/* HOISTED */
+);
+
+var _hoisted_34 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "block font-medium text-md font-bold"
+}, "Dirección", -1
+/* HOISTED */
+);
+
+var _hoisted_36 = {
+  "class": "text-indigo-700 font-semibold"
+};
+
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
   "class": "my-6"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Volver ");
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Volver ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
@@ -27469,13 +27589,37 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.name), 1
       /* TEXT */
-      )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.cedula), 1
+      )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.nit), 1
       /* TEXT */
-      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("   <label class=\"block font-medium text-md font-bold\">Nombre</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.name }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Primer Apellido</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.lastname1 }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Segundo Apellido</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.lastname2 }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Telefono Celular</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.phone_number }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Correo Electronico</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.email }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Dirección</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.address }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Cargo</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.position }}</p>\r\n\r\n                            <label class=\"block font-medium text-md font-bold\">Descripción del Cargo</label>\r\n                            <p class=\"text-indigo-700 font-semibold\">{{ client.description_position }}</p>"), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-        href: _ctx.route('clients.index')
+      ), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.cedula), 1
+      /* TEXT */
+      ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.business_name), 1
+      /* TEXT */
+      ), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.property_name), 1
+      /* TEXT */
+      ), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.name), 1
+      /* TEXT */
+      ), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.lastname1), 1
+      /* TEXT */
+      ), _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.lastname2), 1
+      /* TEXT */
+      ), _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.address), 1
+      /* TEXT */
+      ), _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.phone_number1), 1
+      /* TEXT */
+      ), _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.phone_number2), 1
+      /* TEXT */
+      ), _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.fax), 1
+      /* TEXT */
+      ), _hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.email), 1
+      /* TEXT */
+      ), _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.provider.address), 1
+      /* TEXT */
+      ), _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+        href: _ctx.route('providers.index')
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_14];
+          return [_hoisted_38];
         }),
         _: 1
         /* STABLE */
