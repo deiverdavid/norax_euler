@@ -122,6 +122,8 @@ class ProviderController extends Controller
      */
     public function destroy(Provider $provider)
     {
-        //
+        $provider->delete();
+
+        return redirect()->route('providers.index');//->with('status', 'Usuario Eliminado');
     }
 }
