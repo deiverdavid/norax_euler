@@ -28,6 +28,9 @@
                                 <jet-nav-link :href="route('providers.index')" :active="route().current('providers.*')">
                                     Proveedores
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('categories.index')" :active="route().current('categories.*')">
+                                    Categorias productos
+                                </jet-nav-link>
                             </div>
                         </div>
 
@@ -156,6 +159,9 @@
                         </jet-responsive-nav-link>
                         <jet-responsive-nav-link :href="route('clients.index')" :active="route().current('clients.*')">
                             Proveedores
+                        </jet-responsive-nav-link>
+                        <jet-responsive-nav-link :href="route('categories.index')" :active="route().current('categories.*')">
+                            Categorias productos
                         </jet-responsive-nav-link>
                     </div>
 
