@@ -27,3 +27,6 @@ Route::resource('clients', \App\Http\Controllers\ClientController::class)
 
 Route::resource('providers', \App\Http\Controllers\ProviderController::class)
     ->middleware('auth:sanctum');
+
+Route::resource('categories', \App\Http\Controllers\CategoryController::class)
+    ->middleware('auth:sanctum');
